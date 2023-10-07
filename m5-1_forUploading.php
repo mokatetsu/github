@@ -71,8 +71,6 @@
                 $truePW= $runQuery-> fetchColumn();
 
                 $checkPW= $_POST["deletePW"];
-                
-                //if(!empty($commentList[$delIndex])) {
                     
                     if(empty($checkPW)) {
                         echo "<strong>パスワードを入力してください</strong><br><br>";
@@ -89,9 +87,7 @@
                             echo "<strong>パスワードが間違っているか、設定されていません</strong><br><br>";
                         }
                     }
-                //} else {
-                    //echo "<strong>指定された番号に対応するコメントが存在しません</strong><br><br>";
-                //}
+
             } elseif(!empty($_POST["submitDelComment"])) {
                 echo "<strong>削除したいコメントの番号を入力してください</strong><br><br>";
             } //コメント削除
